@@ -52,8 +52,10 @@ class CalcTask implements Runnable {
             try {
                 wait();
             }
-            catch(InterruptedException ex) {}
+            catch(InterruptedException ex) {
+                System.out.println(2*number);
+            }
         }
-        System.out.println(2*number);
+
     }
 }
